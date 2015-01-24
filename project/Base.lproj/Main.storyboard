@@ -122,25 +122,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asJ-Vq-Jem">
                                 <rect key="frame" x="0.0" y="64" width="600" height="36"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="To:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEg-pj-d9J">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEg-pj-d9J">
                                         <rect key="frame" x="34" y="11" width="23" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhP-Xx-d2f">
-                                        <rect key="frame" x="570" y="7" width="22" height="22"/>
+                                        <rect key="frame" x="570" y="10" width="22" height="22"/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addRecipient:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9FW-Qv-RFV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="mEg-pj-d9J" firstAttribute="leading" secondItem="asJ-Vq-Jem" secondAttribute="leading" constant="34" id="0Ag-tP-ir6"/>
                                     <constraint firstItem="NhP-Xx-d2f" firstAttribute="trailing" secondItem="asJ-Vq-Jem" secondAttribute="trailingMargin" id="1Fd-Yp-MgI"/>
-                                    <constraint firstItem="NhP-Xx-d2f" firstAttribute="centerY" secondItem="asJ-Vq-Jem" secondAttribute="centerY" id="Ejc-3p-uzw"/>
-                                    <constraint firstItem="NhP-Xx-d2f" firstAttribute="top" secondItem="asJ-Vq-Jem" secondAttribute="top" constant="7" id="Gvd-JB-E3V"/>
-                                    <constraint firstItem="NhP-Xx-d2f" firstAttribute="baseline" secondItem="mEg-pj-d9J" secondAttribute="baseline" id="pSj-hG-hXS"/>
+                                    <constraint firstItem="NhP-Xx-d2f" firstAttribute="centerY" secondItem="asJ-Vq-Jem" secondAttribute="centerY" constant="3" id="Ejc-3p-uzw"/>
+                                    <constraint firstItem="NhP-Xx-d2f" firstAttribute="top" secondItem="asJ-Vq-Jem" secondAttribute="top" constant="10" id="Gvd-JB-E3V"/>
+                                    <constraint firstItem="NhP-Xx-d2f" firstAttribute="baseline" secondItem="mEg-pj-d9J" secondAttribute="baseline" constant="5" id="pSj-hG-hXS"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppd-BW-YoH">
@@ -272,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2AN-zP-BVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991" y="-480"/>
+            <point key="canvasLocation" x="991" y="37"/>
         </scene>
         <!--Announcement Table View-->
         <scene sceneID="JX9-la-FRH">
@@ -332,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDy-y9-JBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991" y="-204"/>
+            <point key="canvasLocation" x="991" y="430"/>
         </scene>
         <!--AnnouncementsTable-->
         <scene sceneID="WQm-34-y81">
@@ -359,7 +362,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5FP-Q9-0K7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="484"/>
+            <point key="canvasLocation" x="315" y="908"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Jdc-2n-U2C">
@@ -378,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNO-DT-ol2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-483" y="-372"/>
+            <point key="canvasLocation" x="-306" y="249"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Vtq-rU-0Lu">
