@@ -23,14 +23,15 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
         
         self.tblAnnouncements.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellID)
         self.tblAnnouncements.dataSource = self;
+		self.tblAnnouncements.backgroundColor = UIColor.grayColor();
     }
     
-    /*
+
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
         return 1;
     }
-    */
+
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -43,10 +44,11 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
         let cell = self.tblAnnouncements.dequeueReusableCellWithIdentifier(cellID) as UITableViewCell;
         
         cell.textLabel?.text = (myAnnouncements[indexPath.row] as String);
+		cell.backgroundColor = UIColor.grayColor();
+		cell.textLabel?.textColor = UIColor.whiteColor();
         
         return cell;
     }
-    /*
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
     {
@@ -65,6 +67,5 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
             // Stuff
         }
     }
-    */
     
 }
