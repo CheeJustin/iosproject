@@ -211,10 +211,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--AnnouncementsCompose-->
+        <!--AnnouncementCompose-->
         <scene sceneID="VjP-3k-PJd">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="798-Nc-2Ej" userLabel="AnnouncementsCompose" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="798-Nc-2Ej" userLabel="AnnouncementCompose" customClass="AnnouncementComposeView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fj9-yF-NdM"/>
                         <viewControllerLayoutGuide type="bottom" id="4kN-tl-v1O"/>
@@ -264,6 +264,11 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="btnErase" destination="67c-hJ-pxD" id="tpN-Wl-1XH"/>
+                        <outlet property="btnSend" destination="cdK-fO-Ihn" id="aeo-uF-TX9"/>
+                        <outlet property="textViewCompose" destination="TT5-8a-r1x" id="GZm-0S-uQE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2AN-zP-BVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

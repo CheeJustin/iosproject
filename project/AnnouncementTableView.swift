@@ -21,9 +21,10 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
     {
         super.viewDidLoad();
         
+        self.tblAnnouncements.layer.cornerRadius = 3;
         self.tblAnnouncements.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellID)
         self.tblAnnouncements.dataSource = self;
-		self.tblAnnouncements.backgroundColor = UIColor.grayColor();
+		//self.tblAnnouncements.backgroundColor = UIColor.grayColor();
     }
     
 

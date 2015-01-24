@@ -15,6 +15,7 @@
 		623B79CC1A70D2D700654585 /* projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B79CB1A70D2D700654585 /* projectTests.swift */; };
 		EC5B24BF1A7351C90025DF03 /* AnnouncementTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B24BE1A7351C90025DF03 /* AnnouncementTableView.swift */; };
 		EC5B24C11A735F290025DF03 /* AnnouncementTableViewOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B24C01A735F290025DF03 /* AnnouncementTableViewOLD.swift */; };
+		EC5B24C31A737D2F0025DF03 /* AnnouncementComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B24C21A737D2F0025DF03 /* AnnouncementComposeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		623B79CB1A70D2D700654585 /* projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectTests.swift; sourceTree = "<group>"; };
 		EC5B24BE1A7351C90025DF03 /* AnnouncementTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementTableView.swift; sourceTree = "<group>"; };
 		EC5B24C01A735F290025DF03 /* AnnouncementTableViewOLD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewOLD.swift; sourceTree = "<group>"; };
+		EC5B24C21A737D2F0025DF03 /* AnnouncementComposeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementComposeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				623B79B71A70D2D700654585 /* ViewController.swift */,
 				623B79B91A70D2D700654585 /* Main.storyboard */,
 				EC5B24BE1A7351C90025DF03 /* AnnouncementTableView.swift */,
+				EC5B24C21A737D2F0025DF03 /* AnnouncementComposeView.swift */,
 				EC5B24C01A735F290025DF03 /* AnnouncementTableViewOLD.swift */,
 				623B79BC1A70D2D700654585 /* Images.xcassets */,
 				623B79BE1A70D2D700654585 /* LaunchScreen.xib */,
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				623B79B81A70D2D700654585 /* ViewController.swift in Sources */,
+				EC5B24C31A737D2F0025DF03 /* AnnouncementComposeView.swift in Sources */,
 				623B79B61A70D2D700654585 /* AppDelegate.swift in Sources */,
 				EC5B24C11A735F290025DF03 /* AnnouncementTableViewOLD.swift in Sources */,
 				EC5B24BF1A7351C90025DF03 /* AnnouncementTableView.swift in Sources */,
