@@ -43,6 +43,7 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
         let cell = self.tblAnnouncements.dequeueReusableCellWithIdentifier(cellID) as UITableViewCell;
         
         cell.textLabel?.text = (myAnnouncements[indexPath.row] as String);
+        cell.textLabel?.textColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0);
         
         return cell;
     }
