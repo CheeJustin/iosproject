@@ -11,7 +11,7 @@ import UIKit
 class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
 
-    var myAnnouncements: Array<AnyObject> = ["Classes Cancelled", "Quiz next week!", "New office hours"];
+    var myAnnouncements: Array<AnyObject> = ["Classes Cancelled", "Quiz next week!", "New office hours", "test", "test", "test", "test", "teset", "test","testlast"];
     let cellID: String = "AnnouncementCell";
     
     @IBOutlet weak var tblAnnouncements: UITableView!
