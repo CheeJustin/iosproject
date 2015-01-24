@@ -66,7 +66,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qS7-1J-IDE">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
                                         <connections>
-                                            <segue destination="Io6-qH-9rh" kind="embed" id="bxa-q6-dWQ"/>
+                                            <segue destination="axU-El-g2X" kind="embed" id="OsP-wn-lMl"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -170,16 +170,16 @@
             </objects>
             <point key="canvasLocation" x="288" y="870"/>
         </scene>
-        <!--View Controller-->
+        <!--Announcement Table View-->
         <scene sceneID="JX9-la-FRH">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="axU-El-g2X" customClass="ViewController" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="axU-El-g2X" customClass="AnnouncementTableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wou-fI-cpD"/>
                         <viewControllerLayoutGuide type="bottom" id="F4O-fG-t71"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="OPZ-3H-xyb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nUp-BB-G5D">
@@ -192,19 +192,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qgJ-WK-dQI" id="abd-Kb-RkO">
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete me =P" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShH-KJ-Woo">
-                                                    <rect key="frame" x="8" y="11" width="104" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.88133285979999998" green="0.88133285979999998" blue="0.88133285979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
                                             <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstItem="ShH-KJ-Woo" firstAttribute="centerY" secondItem="abd-Kb-RkO" secondAttribute="centerY" id="nVo-2B-zWn"/>
-                                                <constraint firstItem="ShH-KJ-Woo" firstAttribute="leading" secondItem="abd-Kb-RkO" secondAttribute="leadingMargin" id="xDA-wa-Lqo"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -219,17 +207,20 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="tblAnnouncements" destination="nUp-BB-G5D" id="Dqh-zv-oNW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDy-y9-JBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-405" y="317"/>
+            <point key="canvasLocation" x="-483" y="489"/>
         </scene>
         <!--AnnouncementsTable-->
         <scene sceneID="WQm-34-y81">
             <objects>
                 <tableViewController id="Io6-qH-9rh" userLabel="AnnouncementsTable" customClass="AnnouncementTableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GW7-vC-yJi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
