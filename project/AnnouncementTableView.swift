@@ -46,9 +46,7 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
         cell.textLabel?.text = (myAnnouncements[indexPath.row] as String);
 
         cell.textLabel?.textColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0);
-
-		cell.backgroundColor = UIColor.grayColor();
-		cell.textLabel?.textColor = UIColor.whiteColor();
+		cell.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0);
         
         return cell;
     }
