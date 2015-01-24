@@ -50,6 +50,7 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
         return cell;
     }
     
+    
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
     {
         return true;
@@ -67,5 +68,6 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
             // Stuff
         }
     }
+    
     
 }
