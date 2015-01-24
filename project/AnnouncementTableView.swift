@@ -11,7 +11,7 @@ import UIKit
 class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
 
-    var myAnnouncements: Array<AnyObject> = ["Classes Cancelled", "Quiz next week!", "New office hours"];
+    var myAnnouncements: Array<AnyObject> = ["Classes Cancelled", "Quiz next week!", "New office hours", "test", "test", "test", "test", "teset", "test","testlast"];
     let cellID: String = "AnnouncementCell";
     
     @IBOutlet weak var tblAnnouncements: UITableView!
@@ -25,12 +25,12 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
         self.tblAnnouncements.dataSource = self;
     }
     
-    /*
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
         return 1;
     }
-    */
+
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -46,7 +46,7 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
         
         return cell;
     }
-    /*
+    
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
     {
@@ -65,6 +65,6 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
             // Stuff
         }
     }
-    */
+    
     
 }
