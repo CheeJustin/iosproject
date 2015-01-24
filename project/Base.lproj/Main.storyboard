@@ -66,7 +66,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qS7-1J-IDE">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
                                         <connections>
-                                            <segue destination="axU-El-g2X" kind="embed" id="OsP-wn-lMl"/>
+                                            <segue destination="axU-El-g2X" kind="embed" id="7F4-rr-9GN"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -229,7 +229,7 @@
         <!--AnnouncementsTable-->
         <scene sceneID="WQm-34-y81">
             <objects>
-                <tableViewController id="Io6-qH-9rh" userLabel="AnnouncementsTable" customClass="AnnouncementTableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Io6-qH-9rh" userLabel="AnnouncementsTable" customClass="AnnouncementTableViewOLD" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GW7-vC-yJi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
