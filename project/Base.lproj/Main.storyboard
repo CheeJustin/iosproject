@@ -66,7 +66,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qS7-1J-IDE">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
                                         <connections>
-                                            <segue destination="axU-El-g2X" kind="embed" id="OsP-wn-lMl"/>
+                                            <segue destination="axU-El-g2X" kind="embed" id="7F4-rr-9GN"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -192,8 +192,18 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qgJ-WK-dQI" id="abd-Kb-RkO">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjA-RK-lml">
+                                                    <rect key="frame" x="8" y="7" width="46" height="30"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
                                             <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.2353416982323232" green="0.2353416982323232" blue="0.2353416982323232" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.1800623422" green="0.1800623422" blue="0.1800623422" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -207,6 +217,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tblAnnouncements" destination="nUp-BB-G5D" id="Dqh-zv-oNW"/>
                     </connections>
@@ -218,7 +229,7 @@
         <!--AnnouncementsTable-->
         <scene sceneID="WQm-34-y81">
             <objects>
-                <tableViewController id="Io6-qH-9rh" userLabel="AnnouncementsTable" customClass="AnnouncementTableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Io6-qH-9rh" userLabel="AnnouncementsTable" customClass="AnnouncementTableViewOLD" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GW7-vC-yJi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
