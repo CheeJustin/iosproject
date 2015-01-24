@@ -57,7 +57,7 @@
                                 <rect key="frame" x="0.0" y="107" width="600" height="176"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="798-Nc-2Ej" kind="embed" id="IaX-cX-axr"/>
+                                    <segue destination="798-Nc-2Ej" kind="embed" identifier="I_AnnouncementCompose" id="IaX-cX-axr"/>
                                 </connections>
                             </containerView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1l4-QV-FFy">
@@ -66,7 +66,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qS7-1J-IDE">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
                                         <connections>
-                                            <segue destination="axU-El-g2X" kind="embed" id="7F4-rr-9GN"/>
+                                            <segue destination="axU-El-g2X" kind="embed" identifier="I_AnnouncementTable" id="7F4-rr-9GN"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -134,41 +134,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Announcements" translatesAutoresizingMaskIntoConstraints="NO" id="TT5-8a-r1x">
-                                <rect key="frame" x="16" y="16" width="568" height="100"/>
+                                <rect key="frame" x="16" y="16" width="568" height="114"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67c-hJ-pxD">
-                                <rect key="frame" x="16" y="138" width="49" height="30"/>
+                                <rect key="frame" x="16" y="138" width="275" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="NXB-AF-pDd"/>
+                                </constraints>
                                 <state key="normal" title="ERASE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-fO-Ihn">
-                                <rect key="frame" x="538" y="138" width="41" height="30"/>
+                                <rect key="frame" x="304" y="138" width="275" height="30"/>
+                                <color key="backgroundColor" red="0.24313930759999999" green="0.4253576698" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="SEND">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.88133285984848486" green="0.88133285984848486" blue="0.88133285984848486" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="cdK-fO-Ihn" secondAttribute="trailing" constant="5" id="1Bq-Ui-iLw"/>
-                            <constraint firstItem="4kN-tl-v1O" firstAttribute="top" secondItem="cdK-fO-Ihn" secondAttribute="bottom" constant="8" symbolic="YES" id="Qs9-6v-sLV"/>
-                            <constraint firstItem="cdK-fO-Ihn" firstAttribute="top" secondItem="TT5-8a-r1x" secondAttribute="bottom" constant="22" id="Sha-OX-NYL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cdK-fO-Ihn" secondAttribute="trailing" constant="5" id="Ck3-Pg-dUs"/>
                             <constraint firstItem="TT5-8a-r1x" firstAttribute="top" secondItem="Fj9-yF-NdM" secondAttribute="bottom" constant="16" id="Svd-da-hKy"/>
+                            <constraint firstItem="4kN-tl-v1O" firstAttribute="top" secondItem="67c-hJ-pxD" secondAttribute="bottom" constant="8" symbolic="YES" id="XhA-fK-QjT"/>
                             <constraint firstItem="TT5-8a-r1x" firstAttribute="trailing" secondItem="fBp-GY-mdr" secondAttribute="trailingMargin" id="Zjx-JQ-2Od"/>
-                            <constraint firstItem="TT5-8a-r1x" firstAttribute="leading" secondItem="67c-hJ-pxD" secondAttribute="leading" id="bJU-v9-zfN"/>
+                            <constraint firstItem="cdK-fO-Ihn" firstAttribute="baseline" secondItem="67c-hJ-pxD" secondAttribute="baseline" id="bFO-Vf-7I4"/>
+                            <constraint firstItem="67c-hJ-pxD" firstAttribute="leading" secondItem="TT5-8a-r1x" secondAttribute="leading" id="e8E-vf-rXQ"/>
                             <constraint firstItem="TT5-8a-r1x" firstAttribute="leading" secondItem="fBp-GY-mdr" secondAttribute="leadingMargin" id="iPB-VD-4Q8"/>
-                            <constraint firstItem="cdK-fO-Ihn" firstAttribute="baseline" secondItem="67c-hJ-pxD" secondAttribute="baseline" id="l3T-Fc-5K3"/>
+                            <constraint firstItem="67c-hJ-pxD" firstAttribute="top" secondItem="TT5-8a-r1x" secondAttribute="bottom" constant="8" symbolic="YES" id="oiJ-Le-cbT"/>
+                            <constraint firstItem="67c-hJ-pxD" firstAttribute="width" secondItem="cdK-fO-Ihn" secondAttribute="width" id="zPh-Hv-ctB"/>
+                            <constraint firstItem="cdK-fO-Ihn" firstAttribute="leading" secondItem="67c-hJ-pxD" secondAttribute="trailing" constant="13" id="zrn-dQ-h5G"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2AN-zP-BVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="870"/>
+            <point key="canvasLocation" x="991" y="-480"/>
         </scene>
         <!--Announcement Table View-->
         <scene sceneID="JX9-la-FRH">
@@ -182,8 +191,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nUp-BB-G5D">
-                                <rect key="frame" x="16" y="8" width="568" height="228"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nUp-BB-G5D">
+                                <rect key="frame" x="16" y="20" width="568" height="216"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -193,7 +202,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qgJ-WK-dQI" id="abd-Kb-RkO">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjA-RK-lml">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjA-RK-lml">
                                                     <rect key="frame" x="8" y="7" width="46" height="30"/>
                                                     <state key="normal" title="Button">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -201,6 +210,10 @@
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="bjA-RK-lml" firstAttribute="top" secondItem="abd-Kb-RkO" secondAttribute="topMargin" constant="-1" id="0WP-Ki-5Bq"/>
+                                                <constraint firstItem="bjA-RK-lml" firstAttribute="leading" secondItem="abd-Kb-RkO" secondAttribute="leadingMargin" id="q4H-Ql-CGc"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.2353416982323232" green="0.2353416982323232" blue="0.2353416982323232" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="tintColor" red="0.1800623422" green="0.1800623422" blue="0.1800623422" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,10 +223,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.88133285979999998" green="0.88133285979999998" blue="0.88133285979999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="nUp-BB-G5D" firstAttribute="top" secondItem="wou-fI-cpD" secondAttribute="bottom" constant="8" symbolic="YES" id="KmP-0H-Xfb"/>
-                            <constraint firstAttribute="bottom" secondItem="nUp-BB-G5D" secondAttribute="bottom" constant="20" symbolic="YES" id="l7R-72-Fqr"/>
-                            <constraint firstItem="nUp-BB-G5D" firstAttribute="trailing" secondItem="OPZ-3H-xyb" secondAttribute="trailingMargin" id="pan-Nb-jAf"/>
-                            <constraint firstItem="nUp-BB-G5D" firstAttribute="leading" secondItem="OPZ-3H-xyb" secondAttribute="leadingMargin" id="pd6-9n-BsC"/>
+                            <constraint firstItem="nUp-BB-G5D" firstAttribute="leading" secondItem="OPZ-3H-xyb" secondAttribute="leadingMargin" id="bxN-nC-sRK"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nUp-BB-G5D" secondAttribute="bottom" constant="28" id="tDt-M1-p79"/>
+                            <constraint firstItem="nUp-BB-G5D" firstAttribute="top" secondItem="OPZ-3H-xyb" secondAttribute="top" constant="20" symbolic="YES" id="ygs-d5-4v7"/>
+                            <constraint firstItem="nUp-BB-G5D" firstAttribute="trailing" secondItem="OPZ-3H-xyb" secondAttribute="trailingMargin" id="zvk-Mh-8te"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -224,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDy-y9-JBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-483" y="489"/>
+            <point key="canvasLocation" x="991" y="-204"/>
         </scene>
         <!--AnnouncementsTable-->
         <scene sceneID="WQm-34-y81">
@@ -270,6 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNO-DT-ol2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-483" y="-372"/>
         </scene>
     </scenes>
 </document>
