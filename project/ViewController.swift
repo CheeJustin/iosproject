@@ -10,9 +10,8 @@ import UIKit
 
 class ViewController: UIViewController
 {
-
     
-    var courses = ["BLAW3600 Computers and the Law 4R", "BLAW3600 Computers and the Law 4X", "BLAW3600 Computers and the Law 4Y", "BLAW3600 Computers and the Law 4Z", "BLAW1100 The Law and Society 4A", "BLAW1100 The Law and Society 4B", "BLAW3600 The Law and Society 4C", "BLAW3600 The Law and Society 4D", "BLAW2235 Fun with the Law 2G", "BLAW1200 Suit up by Lawyering up 1F", "BLAW1200 Suit up by Lawyering up 1S"];
+    var courses = groupManager.groups;
 
 	override func viewDidLoad()
     {
@@ -38,6 +37,9 @@ class ViewController: UIViewController
         alert.show();
         */
         
+        ////////////////////
+        
+        
         var alert = UIAlertController(title: "Add Recipient", message: "", preferredStyle: UIAlertControllerStyle.Alert);
         
         for course in courses
@@ -47,6 +49,17 @@ class ViewController: UIViewController
         }
         
         presentViewController(alert, animated: true, completion: nil);
+
+        
+        //////////////////
+        
+        /* C#...
+        var alert = UIAlertController(title: "Add Recipient", message: "", preferredStyle: UIAlertControllerStyle.Alert);
+        
+        var recipients = UITableView();
+        recipients.delegate = self;
+        recipients.dataSource = self;
+        */
         
     }
 

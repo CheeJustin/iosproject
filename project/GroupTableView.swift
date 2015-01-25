@@ -1,55 +1,54 @@
 //
-//  AnnouncementTableView.swift
+//  GroupTableView.swift
 //  project
 //
-//  Created by Justin Chee on 2015-01-23.
+//  Created by Justin Chee on 2015-01-24.
 //  Copyright (c) 2015 ctrlaltbelieve2. All rights reserved.
 //
 
 import UIKit
 
-class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
+class GroupTableView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
     
-    var announcements: Array<AnyObject> = [];
-    let cellID: String = "AnnouncementCell";
+    let cellID: String = "GroupCell";
+    var controlGroups: Array<AnyObject> = [];
     
-    @IBOutlet weak var tblAnnouncements: UITableView!
-    
+    @IBOutlet weak var tblGroups: UITableView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad();
         
-        self.tblAnnouncements.layer.cornerRadius = 3;
-        self.tblAnnouncements.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellID)
-        self.tblAnnouncements.dataSource = self;
+        self.tblGroups.layer.cornerRadius = 3;
+        self.tblGroups.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        self.tblGroups.dataSource = self;
         
-        // Load appropriate announcements
-        announcements = announcementManager.announcements;
+        // Load the appropriate groups
+        controlGroups = groupManager.groups;
     }
     
-
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
         return 1;
     }
-
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return announcements.count;
+        return controlGroups.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         
-        let cell = self.tblAnnouncements.dequeueReusableCellWithIdentifier(cellID) as UITableViewCell;
+        let cell = self.tblGroups.dequeueReusableCellWithIdentifier(cellID) as UITableViewCell;
         
-        cell.textLabel?.text = (announcements[indexPath.row] as String);
-
+        cell.textLabel?.text = (controlGroups[indexPath.row] as String);
+        
         cell.textLabel?.textColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0);
-		cell.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0);
+        cell.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0);
         
         return cell;
     }
@@ -64,7 +63,7 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
     {
         if editingStyle == .Delete
         {
-            announcements.removeAtIndex(indexPath.row);
+            controlGroups.removeAtIndex(indexPath.row);
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade);
         }
         else if editingStyle == .Insert
