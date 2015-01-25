@@ -41,4 +41,9 @@ class GroupManager: NSObject {
         }
     }
     
+    func toggleSelect(index: Int)
+    {
+        groups[index].selected = !groups[index].selected;
+    }
+    
 }

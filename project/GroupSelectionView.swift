@@ -56,6 +56,7 @@ class AnnouncementTableViewOLD: UITableViewController
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         groups[indexPath.row].selected = !groups[indexPath.row].selected;
+        groupManager.toggleSelect(indexPath.row);
         
         // Turns off selection properties to show accessory.
         tableView.deselectRowAtIndexPath(indexPath, animated: false);
@@ -65,6 +66,9 @@ class AnnouncementTableViewOLD: UITableViewController
     
     @IBAction func addRecipient(sender: AnyObject)
     {
+        // Refreshes previous page
+        NSNotificationCenter.defaultCenter().postNotificationName("reload", object: nil);
+        // Dismisses current view
         dismissViewControllerAnimated(true, completion: nil);
     }
 }
