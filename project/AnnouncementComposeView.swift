@@ -22,6 +22,34 @@ class AnnouncementComposeView: UIViewController
         self.textViewCompose.layer.cornerRadius = 3;
         self.btnErase.layer.cornerRadius = 3;
         self.btnSend.layer.cornerRadius = 3;
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadCompose:", name: "reload", object: nil);
+        populateTextView();
     }
     
+    func populateTextView()
+    {
+        groupManager.populate();
+        
+        var string = "Announcements...\nRecipients: ";
+        
+        for group in groupManager.groups
+        {
+            if group.selected
+            {
+                string += ", " + group.name;
+            }
+        }
+        textViewCompose.text = string;
+    }
+    
+    func reloadCompose(notification: NSNotification)
+    {
+        populateTextView();
+    }
+    
+    @IBAction func eraseCompose(sender: AnyObject)
+    {
+        textViewCompose.text = "";
+    }
 }

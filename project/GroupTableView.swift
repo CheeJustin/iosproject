@@ -12,7 +12,7 @@ class GroupTableView: UIViewController, UITableViewDelegate, UITableViewDataSour
 {
     
     let cellID: String = "GroupCell";
-    var controlGroups: Array<AnyObject> = [];
+    var controlGroups: Array<Group> = [];
     
     @IBOutlet weak var tblGroups: UITableView!
     
@@ -25,6 +25,7 @@ class GroupTableView: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tblGroups.dataSource = self;
         
         // Load the appropriate groups
+        groupManager.populate();
         controlGroups = groupManager.groups;
     }
     
@@ -45,7 +46,7 @@ class GroupTableView: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = self.tblGroups.dequeueReusableCellWithIdentifier(cellID) as UITableViewCell;
         
-        cell.textLabel?.text = (controlGroups[indexPath.row] as String);
+        cell.textLabel?.text = (controlGroups[indexPath.row].name as String);
         
         cell.textLabel?.textColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0);
         cell.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0);
