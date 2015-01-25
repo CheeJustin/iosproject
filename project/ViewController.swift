@@ -39,7 +39,7 @@ class ViewController: UIViewController
         
         ////////////////////
         
-        
+        /*
         var alert = UIAlertController(title: "Add Recipient", message: "", preferredStyle: UIAlertControllerStyle.Alert);
         
         for course in courses
@@ -49,7 +49,7 @@ class ViewController: UIViewController
         }
         
         presentViewController(alert, animated: true, completion: nil);
-
+        */
         
         //////////////////
         
@@ -60,6 +60,8 @@ class ViewController: UIViewController
         recipients.delegate = self;
         recipients.dataSource = self;
         */
+        
+        //////////////////
         
     }
 
