@@ -41,6 +41,24 @@ class AnnouncementComposeView: UIViewController
             }
         }
         textViewCompose.text = string;
+        
+        /*
+        let button = UIButton.buttonWithType(UIButtonType.System) as UIButton;
+        button.frame = CGRectMake(100, 100, 100, 50);
+        button.backgroundColor = UIColor.greenColor();
+        button.setTitle("Test Button", forState: UIControlState.Normal);
+        button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside);
+        
+        self.view.addSubview(button);
+        
+        let button2 = UIButton.buttonWithType(UIButtonType.System) as UIButton;
+        button2.frame = CGRectMake(100, 100, 100, 50);
+        button2.backgroundColor = UIColor.blueColor();
+        button2.setTitle("RAN", forState: UIControlState.Normal);
+        button2.addTarget(self, action: "button2Action:", forControlEvents: UIControlEvents.TouchUpInside);
+        
+        self.view.addSubview(button2);
+        */
     }
     
     func reloadCompose(notification: NSNotification)
