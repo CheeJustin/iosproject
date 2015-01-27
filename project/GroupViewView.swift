@@ -1,14 +1,14 @@
 //
-//  GroupTableView.swift
+//  GroupJoinedTableVIew.swift
 //  project
 //
-//  Created by Justin Chee on 2015-01-24.
+//  Created by Justin Chee on 2015-01-26.
 //  Copyright (c) 2015 ctrlaltbelieve2. All rights reserved.
 //
 
 import UIKit
 
-class GroupTableView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
+class GroupViewView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
     
     let cellID: String = "GroupCell";
@@ -26,7 +26,7 @@ class GroupTableView: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // Load the appropriate groups
         groupManager.populate();
-        controlGroups = groupManager.groups;
+        controlGroups = groupManager.views;
     }
     
     

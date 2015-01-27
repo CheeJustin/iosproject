@@ -29,7 +29,7 @@ class ToRecipientView: UIViewController
     
         var string = "";
     
-        for group in groupManager.groups
+        for group in groupManager.controls
         {
             if group.selected
             {

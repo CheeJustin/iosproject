@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController
 {
     
-    var courses = groupManager.groups;
+    var courses = groupManager.controls;
 
 	override func viewDidLoad()
     {
@@ -28,7 +28,7 @@ class ViewController: UIViewController
     
     @IBAction func addRecipient(sender: AnyObject)
     {
-        /*
+        /* TESTING ALERTS
         var alert = UIAlertView();
         alert.title = "Add To Announcement";
         alert.message = "List of courses";
