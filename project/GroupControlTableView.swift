@@ -1,18 +1,17 @@
 //
-//  AnnouncementTableView.swift
+//  ControlGroupTableView.swift
 //  project
 //
-//  Created by Justin Chee on 2015-01-23.
+//  Created by Justin Chee on 2015-01-27.
 //  Copyright (c) 2015 ctrlaltbelieve2. All rights reserved.
 //
 
 import UIKit
 
-class GroupSelectView: UITableViewController
+class GroupControlTableView: UITableViewController
 {
-
     var groups: Array<Group> = [];
-    let cellID: String = "GroupSelectCell";
+    let cellID: String = "GroupControlCell";
     
     
     override func viewDidLoad()
@@ -39,6 +38,7 @@ class GroupSelectView: UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier(cellID) as UITableViewCell;
         let group = groups[indexPath.row];
         cell.textLabel?.text = (group.name as String);
+        cell.textLabel?.textColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0);
         
         if group.selected
         {
@@ -48,6 +48,8 @@ class GroupSelectView: UITableViewController
         {
             cell.accessoryType = UITableViewCellAccessoryType.None;
         }
+        
+        //cell.button.addTarget(self, action: "Test", forControlEvents: .TouchUpInside)
         
         return cell;
     }
@@ -62,13 +64,15 @@ class GroupSelectView: UITableViewController
         tableView.deselectRowAtIndexPath(indexPath, animated: false);
         tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None);
         
+        //NSNotificationCenter.defaultCenter().postNotificationName("ToGroupView", object: nil);
+        //self.performSegueWithIdentifier("ToGroupView", sender: self);
     }
     
-    @IBAction func addRecipient(sender: AnyObject)
+    /*
+    func Test()
     {
-        // Refreshes previous page
-        NSNotificationCenter.defaultCenter().postNotificationName("reload", object: nil);
-        // Dismisses current view
-        dismissViewControllerAnimated(true, completion: nil);
+        self.performSegueWithIdentifier("ToGroupView", sender: self);
     }
+    */
+
 }
