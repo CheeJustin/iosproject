@@ -27,8 +27,16 @@ class GroupViewView: UIViewController, UITableViewDelegate, UITableViewDataSourc
         // Load the appropriate groups
         groupManager.populate();
         controlGroups = groupManager.views;
+        
+        //NSNotificationCenter.defaultCenter().addObserver(self, selector: "goToGroupView:", name: "ToGroupView", object: nil);
     }
     
+    /*
+    func goToGroupView()
+    {
+        self.performSegueWithIdentifier("ToGroupView", sender: self);
+    }
+    */
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {

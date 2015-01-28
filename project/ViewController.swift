@@ -17,12 +17,15 @@ class ViewController: UIViewController
     {
         super.viewDidLoad();
 		// Do any additional setup after loading the view, typically from a nib.
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "goToGroupView", name: "selectGroup", object: nil);
+        
+        self.performSegueWithIdentifier("ToGroupView", sender: nil)
 	}
     
-	override func didReceiveMemoryWarning()
+	func goToGroupView()
     {
-        super.didReceiveMemoryWarning();
-		// Dispose of any resources that can be recreated.
+        self.performSegueWithIdentifier("ToGroupView", sender: nil);
     }
     
     

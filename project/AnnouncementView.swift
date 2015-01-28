@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
+class AnnouncementView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
     
     var announcements: Array<Announcement> = [];

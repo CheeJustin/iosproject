@@ -73,5 +73,19 @@ class GroupControlView: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.section == 0 {
+            println("www");
+        }
+    }
+    /*
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        //groupManager.toggleSelect(indexPath.row);
+        println("clicked");
+        //NSNotificationCenter.defaultCenter().postNotificationName("selectGroup", object: nil);
+        println("clicked");
+    }
+    */
     
 }
