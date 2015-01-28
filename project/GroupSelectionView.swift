@@ -20,7 +20,7 @@ class GroupSelectView: UITableViewController
         super.viewDidLoad();
         
         groupManager.populate();
-        groups = groupManager.controls;
+        groups = groupManager.groups;
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int

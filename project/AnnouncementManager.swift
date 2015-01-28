@@ -10,38 +10,7 @@ import UIKit
 
 var announcementManager = AnnouncementManager();
 
-var announcements_DEFAULT = ["Classes Cancelled", "Quiz next week!", "New office hours", "Marks lost", "Assignment 2 is out!", "IT help", "Disregard the previous announcement", "Sick today", "Nvm, not sick"];
-
-
-struct Announcement
-{
-    var title: String;
-    var description: String;
-}
-
-class AnnouncementManager: NSObject
-{
- 
-    var announcements = [Announcement]();
+class AnnouncementManager: NSObject {
     
-    var isPopulated: Bool = false;
-    
-    func addAnnouncement(title: String, description: String = "I am description")
-    {
-        announcements.append(Announcement(title: title, description: description));
-    }
-    
-    func populate()
-    {
-        if !isPopulated
-        {
-            for announcement in announcements_DEFAULT
-            {
-                addAnnouncement(announcement);
-            }
-    
-            isPopulated = true;
-        }
-    }
-    
+    var announcements = ["Classes Cancelled", "Quiz next week!", "New office hours", "test", "test", "test", "test", "teset", "test","testlast"];
 }

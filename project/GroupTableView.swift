@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupControlView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
+class GroupTableView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
     
     let cellID: String = "GroupCell";
@@ -26,7 +26,7 @@ class GroupControlView: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         // Load the appropriate groups
         groupManager.populate();
-        controlGroups = groupManager.controls;
+        controlGroups = groupManager.groups;
     }
     
     
@@ -73,19 +73,5 @@ class GroupControlView: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.section == 0 {
-            println("www");
-        }
-    }
-    /*
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
-        //groupManager.toggleSelect(indexPath.row);
-        println("clicked");
-        //NSNotificationCenter.defaultCenter().postNotificationName("selectGroup", object: nil);
-        println("clicked");
-    }
-    */
     
 }
