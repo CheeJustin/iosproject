@@ -11,23 +11,27 @@ import UIKit
 class ViewController: UIViewController
 {
     
-    var courses = groupManager.groups;
+    var courses = groupManager.controls;
 
 	override func viewDidLoad()
     {
         super.viewDidLoad();
 		// Do any additional setup after loading the view, typically from a nib.
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "goToGroupView", name: "selectGroup", object: nil);
+        
+        self.performSegueWithIdentifier("ToGroupView", sender: nil)
 	}
     
-	override func didReceiveMemoryWarning()
+	func goToGroupView()
     {
-        super.didReceiveMemoryWarning();
-		// Dispose of any resources that can be recreated.
+        self.performSegueWithIdentifier("ToGroupView", sender: nil);
     }
+    
     
     @IBAction func addRecipient(sender: AnyObject)
     {
-        /*
+        /* TESTING ALERTS
         var alert = UIAlertView();
         alert.title = "Add To Announcement";
         alert.message = "List of courses";

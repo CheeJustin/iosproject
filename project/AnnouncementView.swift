@@ -8,10 +8,10 @@
 
 import UIKit
 
-class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
+class AnnouncementView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
     
-    var announcements: Array<AnyObject> = [];
+    var announcements: Array<Announcement> = [];
     let cellID: String = "AnnouncementCell";
     
     @IBOutlet weak var tblAnnouncements: UITableView!
@@ -26,6 +26,7 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
         self.tblAnnouncements.dataSource = self;
         
         // Load appropriate announcements
+        announcementManager.populate();
         announcements = announcementManager.announcements;
     }
     
@@ -34,7 +35,6 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
     {
         return 1;
     }
-
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -46,7 +46,7 @@ class AnnouncementTableView: UIViewController, UITableViewDelegate, UITableViewD
         
         let cell = self.tblAnnouncements.dequeueReusableCellWithIdentifier(cellID) as UITableViewCell;
         
-        cell.textLabel?.text = (announcements[indexPath.row] as String);
+        cell.textLabel?.text = (announcements[indexPath.row].title as String);
 
         cell.textLabel?.textColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0);
 		cell.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0);
