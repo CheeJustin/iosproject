@@ -19,12 +19,12 @@ class ViewController: UIViewController
 		// Do any additional setup after loading the view, typically from a nib.
         
 	}
-    
-    @IBAction func addRecipient(sender: AnyObject)
-    {
-        
-    }
 
+    @IBAction func back(sender: AnyObject)
+    {
+        // Dismisses current view
+        dismissViewControllerAnimated(true, completion: nil);
+    }
 
 }
 
