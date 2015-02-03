@@ -12,6 +12,8 @@ class ToRecipientView: UIViewController
 {
     
     let cellID: String = "GroupSelectCell";
+    var curGroupIndex: Int = -1;
+    var curGroupName: String = "";
     
     @IBOutlet weak var textRecipient: UITextField!
     
@@ -20,6 +22,8 @@ class ToRecipientView: UIViewController
         super.viewDidLoad();
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadCompose:", name: "reload", object: nil);
+        curGroupIndex = groupManager.getCurControlGroupIndex();
+        curGroupName = groupManager.controls[curGroupIndex].name;
         populateTextView();
     }
     
@@ -27,11 +31,12 @@ class ToRecipientView: UIViewController
     {
         groupManager.populate();
     
-        var string = "";
+        var string = curGroupName;
     
         for group in groupManager.controls
         {
-            if group.selected
+            // Change group.name != curGroupName for cases with groups having the same name <----
+            if group.selected && group.name != curGroupName
             {
                 string += ", -" + truncateName(group.name);
             }

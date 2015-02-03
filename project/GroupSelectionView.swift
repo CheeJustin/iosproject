@@ -12,6 +12,7 @@ class GroupSelectView: UITableViewController
 {
 
     var groups: Array<Group> = [];
+    var curGroup: Int = -1;
     let cellID: String = "GroupSelectCell";
     
     
@@ -21,6 +22,7 @@ class GroupSelectView: UITableViewController
         
         groupManager.populate();
         groups = groupManager.controls;
+        curGroup = groupManager.getCurControlGroupIndex();
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
@@ -55,13 +57,15 @@ class GroupSelectView: UITableViewController
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
-        groups[indexPath.row].selected = !groups[indexPath.row].selected;
-        groupManager.toggleSelect(indexPath.row);
-        
-        // Turns off selection properties to show accessory.
-        tableView.deselectRowAtIndexPath(indexPath, animated: false);
-        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None);
-        
+        if indexPath.row != curGroup
+        {
+            groups[indexPath.row].selected = !groups[indexPath.row].selected;
+            groupManager.toggleSelect(indexPath.row);
+            
+            // Turns off selection properties to show accessory.
+            tableView.deselectRowAtIndexPath(indexPath, animated: false);
+            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None);
+        }
     }
     
     @IBAction func addRecipient(sender: AnyObject)
