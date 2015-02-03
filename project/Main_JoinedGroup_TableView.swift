@@ -20,6 +20,10 @@ class Main_JoinedGroup_TableView: UITableViewController
         
         groupManager.populate();
         groups = groupManager.views;
+        
+        self.tableView.layer.cornerRadius = 3;
+        self.tableView.layer.masksToBounds = true;
+        self.tableView.clipsToBounds = true;
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int

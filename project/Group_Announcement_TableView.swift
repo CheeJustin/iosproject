@@ -11,7 +11,7 @@ import UIKit
 class Group_Announcement_TableView: UITableViewController
 {
     
-    var group: Group = Group(id: 0, name: "No name", selected: true, info: "No info", announcements: []);
+    //var group: Group = Group(id: 0, name: "No name", selected: true, info: "No info", announcements: []);
     var announcements: Array<Announcement> = [];
     let cellID: String = "GroupAnnouncementCell";
     
@@ -20,8 +20,12 @@ class Group_Announcement_TableView: UITableViewController
     {
         super.viewDidLoad();
         
-        group = groupManager.getCurControlGroup();
-        announcements = group.announcements;
+        //group = groupManager.getCurControlGroup();
+        announcements = curGroup.announcements;
+        
+        self.tableView.layer.cornerRadius = 3;
+        self.tableView.layer.masksToBounds = true;
+        self.tableView.clipsToBounds = true;
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
