@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--I_MainView-->
+        <!--Main_View-->
         <scene sceneID="h1o-f1-jSO">
             <objects>
-                <viewController id="oBW-g7-K0A" userLabel="I_MainView" sceneMemberID="viewController">
+                <viewController id="oBW-g7-K0A" userLabel="Main_View" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yfg-hF-PVK"/>
                         <viewControllerLayoutGuide type="bottom" id="Qgi-0w-9ua"/>
@@ -37,11 +37,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8y-av-H8J">
                                 <rect key="frame" x="0.0" y="251" width="320" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-J7-lAA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joined:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-J7-lAA">
                                         <rect key="frame" x="33" y="15" width="41" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="33" y="15" width="57" height="21"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                             </view>
@@ -97,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="-265.5" y="195"/>
         </scene>
-        <!--I_GroupView-->
+        <!--Group_View-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" userLabel="I_GroupView" customClass="ViewController" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" userLabel="Group_View" customClass="Group_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -235,10 +238,10 @@
             </objects>
             <point key="canvasLocation" x="375" y="195"/>
         </scene>
-        <!--AnnouncementComposeView-->
+        <!--Group_AnnouncementCompose_View-->
         <scene sceneID="VjP-3k-PJd">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="798-Nc-2Ej" userLabel="AnnouncementComposeView" customClass="AnnouncementComposeView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="798-Nc-2Ej" userLabel="Group_AnnouncementCompose_View" customClass="Group_AnnouncementCompose_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fj9-yF-NdM"/>
                         <viewControllerLayoutGuide type="bottom" id="4kN-tl-v1O"/>
@@ -301,10 +304,10 @@
             </objects>
             <point key="canvasLocation" x="933" y="96"/>
         </scene>
-        <!--AnnouncementTableView-->
+        <!--Group_Announcement_View-->
         <scene sceneID="JX9-la-FRH">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="axU-El-g2X" userLabel="AnnouncementTableView" customClass="AnnouncementView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="axU-El-g2X" userLabel="Group_Announcement_View" customClass="Group_Announcement_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wou-fI-cpD"/>
                         <viewControllerLayoutGuide type="bottom" id="F4O-fG-t71"/>
@@ -349,10 +352,10 @@
             </objects>
             <point key="canvasLocation" x="933" y="523.5"/>
         </scene>
-        <!--GroupSelectionView-->
+        <!--Group_GroupSelection_TableView-->
         <scene sceneID="WQm-34-y81">
             <objects>
-                <tableViewController id="Io6-qH-9rh" userLabel="GroupSelectionView" customClass="GroupSelectView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Io6-qH-9rh" userLabel="Group_GroupSelection_TableView" customClass="Group_GroupSelection_TableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GW7-vC-yJi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -441,7 +444,7 @@
         <!--UNUSED ANNOUNCEMENT-->
         <scene sceneID="FX3-vE-6BW">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Qtn-aa-amZ" userLabel="UNUSED ANNOUNCEMENT" customClass="AnnouncementComposeView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Qtn-aa-amZ" userLabel="UNUSED ANNOUNCEMENT" customClass="Group_AnnouncementCompose_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ovW-no-Nig"/>
                         <viewControllerLayoutGuide type="bottom" id="euG-He-DrU"/>
@@ -506,10 +509,10 @@
             </objects>
             <point key="canvasLocation" x="-223.5" y="1873.5"/>
         </scene>
-        <!--GroupControlTableView-->
+        <!--Main_ControlGroup_TableView-->
         <scene sceneID="bnN-DV-a11">
             <objects>
-                <tableViewController id="xnj-Ur-BD3" userLabel="GroupControlTableView" customClass="GroupControlTableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="xnj-Ur-BD3" userLabel="Main_ControlGroup_TableView" customClass="Main_ControlGroup_TableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Amn-GI-LXr">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="104"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -538,10 +541,10 @@
             </objects>
             <point key="canvasLocation" x="-591" y="-357"/>
         </scene>
-        <!--View Controller-->
+        <!--Main_ControlGroupContainer_View-->
         <scene sceneID="P2e-6d-vOF">
             <objects>
-                <viewController id="PYa-QV-9gY" sceneMemberID="viewController">
+                <viewController id="PYa-QV-9gY" userLabel="Main_ControlGroupContainer_View" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="28S-bw-Dhp"/>
                         <viewControllerLayoutGuide type="bottom" id="B9W-wh-9oi"/>
@@ -570,10 +573,10 @@
             </objects>
             <point key="canvasLocation" x="-1272" y="84"/>
         </scene>
-        <!--GroupControlView-->
+        <!--UNUSED_Main_ControlGroup_View-->
         <scene sceneID="RUd-R7-Cfm">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="a5X-md-iSv" userLabel="GroupControlView" customClass="GroupControlView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="a5X-md-iSv" userLabel="UNUSED_Main_ControlGroup_View" customClass="Main_ControlGroup_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ua9-z5-jpB"/>
                         <viewControllerLayoutGuide type="bottom" id="4xo-RS-y6P"/>
@@ -618,10 +621,10 @@
             </objects>
             <point key="canvasLocation" x="-67.5" y="-720"/>
         </scene>
-        <!--ToRecipientView Controller-->
+        <!--Group_ToRecipient_View-->
         <scene sceneID="M87-Ox-mMH">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="iG9-J4-P1A" userLabel="ToRecipientView Controller" customClass="ToRecipientView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="iG9-J4-P1A" userLabel="Group_ToRecipient_View" customClass="Group_ToRecipient_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gQW-yQ-13a"/>
                         <viewControllerLayoutGuide type="bottom" id="euV-Rd-HO8"/>
@@ -652,10 +655,10 @@
             </objects>
             <point key="canvasLocation" x="344.25" y="-364.5"/>
         </scene>
-        <!--GroupViewView-->
+        <!--Main_JoinedGroup_View-->
         <scene sceneID="bol-hI-Du7">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="gwA-Nc-Xeg" userLabel="GroupViewView" customClass="GroupViewView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="gwA-Nc-Xeg" userLabel="Main_JoinedGroup_View" customClass="Main_JoinedGroup_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S9m-01-MFW"/>
                         <viewControllerLayoutGuide type="bottom" id="kJe-FS-pBN"/>
@@ -698,7 +701,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgg-p4-Yhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-265.5" y="1014"/>
+            <point key="canvasLocation" x="-265.5" y="1032"/>
         </scene>
     </scenes>
 </document>

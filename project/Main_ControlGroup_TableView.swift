@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupControlTableView: UITableViewController
+class Main_ControlGroup_TableView: UITableViewController
 {
     var groups: Array<Group> = [];
     let cellID: String = "GroupControlCell";

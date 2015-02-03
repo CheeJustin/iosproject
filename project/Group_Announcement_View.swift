@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnnouncementView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
+class Group_Announcement_View: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
  
     var group: Group = Group(id: 0, name: "No name", selected: true, info: "No info", announcements: []);

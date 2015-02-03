@@ -82,6 +82,19 @@ class GroupManager: NSObject
         return Group(id: 0, name: "No name", selected: true, info: "No info", announcements: []);
     }
     
+    func getCurControlGroupIndex() -> Int
+    {
+        for i in 0...controls.count - 1
+        {
+            if controls[i].selected
+            {
+                return i;
+            }
+        }
+        // Cause an error
+        return -42;
+    }
+    
     // Deselects all control groups
     func deselectAllControls() -> Void
     {
