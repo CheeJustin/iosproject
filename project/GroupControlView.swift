@@ -62,6 +62,7 @@ class GroupControlView: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
     {
+        /*
         if editingStyle == .Delete
         {
             controlGroups.removeAtIndex(indexPath.row);
@@ -71,9 +72,11 @@ class GroupControlView: UIViewController, UITableViewDelegate, UITableViewDataSo
         {
             // Stuff
         }
+        */
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("clicked");
         if indexPath.section == 0 {
             println("www");
         }

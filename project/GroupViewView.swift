@@ -62,14 +62,16 @@ class GroupViewView: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return cell;
     }
     
-    
+    /*
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
     {
         return true;
     }
+    */
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
     {
+        /*
         if editingStyle == .Delete
         {
             controlGroups.removeAtIndex(indexPath.row);
@@ -79,7 +81,13 @@ class GroupViewView: UIViewController, UITableViewDelegate, UITableViewDataSourc
         {
             // Stuff
         }
+        */
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("CLick");
+    }
+
     
     
 }
