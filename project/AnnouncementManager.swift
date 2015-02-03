@@ -10,6 +10,7 @@ import UIKit
 
 var announcementManager = AnnouncementManager();
 var announcementManager2 = AnnouncementManager();
+var curAnnouncement = Announcement(title: "No Title", description: "No Description");
 
 var announcements_DEFAULT = ["Classes Cancelled", "Quiz next week!", "New office hours", "Marks lost", "Assignment 2 is out!", "IT help", "Disregard the previous announcement", "Sick today", "Nvm, not sick"];
 
@@ -44,6 +45,9 @@ class AnnouncementManager: NSObject
             }
     
             isPopulated = true;
+            // For testing purposes
+            announcements[0].description = "I will be late to class today as I had a terrible dream.\n\nThe dream involved a missing umbrella and a dreadful downpour that brought chills to the very soul. The very thought of this vision deteriorates me faith in humanity, as such, I will be staying home and eating some chicken noodle soup to ease the pain.\n\nSee you guys next week!";
+            announcements[1].description = "Remember that there's a quix next week! It's work 72% of your marks so don't be late...\nYou know who you are.\n\nXOXO\n\nPerson";
         }
     }
     

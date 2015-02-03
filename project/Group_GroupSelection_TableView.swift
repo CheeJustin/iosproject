@@ -19,8 +19,7 @@ class Group_GroupSelection_TableView: UITableViewController
     override func viewDidLoad()
     {
         super.viewDidLoad();
-        
-        groupManager.populate();
+
         groups = groupManager.controls;
         curGroup = groupManager.getCurControlGroupIndex();
     }
