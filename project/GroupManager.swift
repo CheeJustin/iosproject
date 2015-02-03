@@ -57,7 +57,9 @@ class GroupManager: NSObject
             
             isPopulated = true;
             announcementManager.populate();
+            announcementManager2.populate2();
             controls[0].announcements = announcementManager.announcements;
+            controls[1].announcements = announcementManager2.announcements;
         }
     }
     
