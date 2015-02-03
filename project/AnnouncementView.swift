@@ -10,7 +10,8 @@ import UIKit
 
 class AnnouncementView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
-    
+ 
+    var group: Group = Group(id: 0, name: "No name", selected: true, info: "No info", announcements: []);
     var announcements: Array<Announcement> = [];
     let cellID: String = "AnnouncementCell";
     
@@ -26,8 +27,11 @@ class AnnouncementView: UIViewController, UITableViewDelegate, UITableViewDataSo
         self.tblAnnouncements.dataSource = self;
         
         // Load appropriate announcements
-        announcementManager.populate();
-        announcements = announcementManager.announcements;
+        //announcementManager.populate();
+        //announcements = announcementManager.announcements;
+        group = groupManager.getCurControlGroup();
+        announcements = group.announcements;
+        
     }
     
 

@@ -56,13 +56,26 @@ class GroupManager: NSObject
             }
             
             isPopulated = true;
+            announcementManager.populate();
+            controls[0].announcements = announcementManager.announcements;
         }
-        controls[0].announcements = announcementManager.announcements;
     }
     
     func toggleSelect(index: Int)
     {
         controls[index].selected = !controls[index].selected;
+    }
+    
+    func getCurControlGroup() -> Group
+    {
+        for group in controls
+        {
+            if group.selected
+            {
+                return group;
+            }
+        }
+        return Group(id: 0, name: "No name", selected: true, info: "No info", announcements: []);
     }
     
 }
