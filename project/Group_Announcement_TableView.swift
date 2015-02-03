@@ -62,8 +62,12 @@ class Group_Announcement_TableView: UITableViewController
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
-        curAnnouncement = announcements[indexPath.row];
+        if announcements.count == 0
+        {
+            return;
+        }
         
+        curAnnouncement = announcements[indexPath.row];
         self.performSegueWithIdentifier("ToAnnouncementView", sender: self);
     }
     

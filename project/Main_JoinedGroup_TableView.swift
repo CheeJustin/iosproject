@@ -1,14 +1,14 @@
 //
-//  ControlGroupTableView.swift
+//  Main_JoinedGroup_TableView.swift
 //  project
 //
-//  Created by Justin Chee on 2015-01-27.
+//  Created by Justin Chee on 2015-02-03.
 //  Copyright (c) 2015 ctrlaltbelieve2. All rights reserved.
 //
 
 import UIKit
 
-class Main_ControlGroup_TableView: UITableViewController
+class Main_JoinedGroup_TableView: UITableViewController
 {
     var groups: Array<Group> = [];
     let cellID: String = "GroupControlCell";
@@ -19,7 +19,7 @@ class Main_ControlGroup_TableView: UITableViewController
         super.viewDidLoad();
         
         groupManager.populate();
-        groups = groupManager.controls;
+        groups = groupManager.views;
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
@@ -48,7 +48,9 @@ class Main_ControlGroup_TableView: UITableViewController
         groups[indexPath.row].selected = !groups[indexPath.row].selected;
         groupManager.toggleSelect(indexPath.row);
         
-        self.performSegueWithIdentifier("ToGroupView", sender: self);
+        //self.performSegueWithIdentifier("ToGroupView", sender: self);
     }
+    
+
 
 }
