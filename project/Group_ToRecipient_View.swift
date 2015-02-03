@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ToRecipientView: UIViewController
+class Group_ToRecipient_View: UIViewController
 {
     
     let cellID: String = "GroupSelectCell";

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnnouncementComposeView: UIViewController
+class Group_AnnouncementCompose_View: UIViewController
 {
 
     @IBOutlet weak var textViewCompose: UITextView!;

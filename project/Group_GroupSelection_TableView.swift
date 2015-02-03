@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupSelectView: UITableViewController
+class Group_GroupSelection_TableView: UITableViewController
 {
 
     var groups: Array<Group> = [];

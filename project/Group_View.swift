@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class Group_View: UIViewController
 {
     
     //var courses = groupManager.controls;
