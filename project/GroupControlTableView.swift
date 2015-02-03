@@ -65,7 +65,8 @@ class GroupControlTableView: UITableViewController
         tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None);
         
         //NSNotificationCenter.defaultCenter().postNotificationName("ToGroupView", object: nil);
-        //self.performSegueWithIdentifier("ToGroupView", sender: self);
+        NSNotificationCenter.defaultCenter().postNotificationName("ToGroupView", object: nil);
+        self.performSegueWithIdentifier("ToGroupView", sender: self);
     }
     
     /*

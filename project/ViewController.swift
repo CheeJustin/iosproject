@@ -23,6 +23,7 @@ class ViewController: UIViewController
     @IBAction func back(sender: AnyObject)
     {
         // Dismisses current view
+        println("CLICKED");
         dismissViewControllerAnimated(true, completion: nil);
     }
 

@@ -19,9 +19,9 @@
 		EC5B24C91A739BD00025DF03 /* GroupControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B24C81A739BD00025DF03 /* GroupControlView.swift */; };
 		EC5B24CB1A739DE20025DF03 /* AnnouncementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B24CA1A739DE20025DF03 /* AnnouncementManager.swift */; };
 		EC5B24CF1A7706C80025DF03 /* ToRecipientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B24CE1A7706C80025DF03 /* ToRecipientView.swift */; };
+		EC6CF4681A8047B5008824B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6CF4661A8047B4008824B5 /* Main.storyboard */; };
 		ECB8684C1A7768C70010C2CC /* GroupViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8684B1A7768C70010C2CC /* GroupViewView.swift */; };
 		ECB8684E1A77EC9D0010C2CC /* GroupControlTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8684D1A77EC9D0010C2CC /* GroupControlTableView.swift */; };
-		ECB868551A78C93A0010C2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB868531A78C93A0010C2CC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +51,9 @@
 		EC5B24C81A739BD00025DF03 /* GroupControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupControlView.swift; sourceTree = "<group>"; };
 		EC5B24CA1A739DE20025DF03 /* AnnouncementManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementManager.swift; sourceTree = "<group>"; };
 		EC5B24CE1A7706C80025DF03 /* ToRecipientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToRecipientView.swift; sourceTree = "<group>"; };
+		EC6CF4671A8047B5008824B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECB8684B1A7768C70010C2CC /* GroupViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewView.swift; sourceTree = "<group>"; };
 		ECB8684D1A77EC9D0010C2CC /* GroupControlTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupControlTableView.swift; sourceTree = "<group>"; };
-		ECB868541A78C93A0010C2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		623B79B21A70D2D600654585 /* project */ = {
 			isa = PBXGroup;
 			children = (
-				ECB868531A78C93A0010C2CC /* Main.storyboard */,
+				EC6CF4661A8047B4008824B5 /* Main.storyboard */,
 				623B79B51A70D2D700654585 /* AppDelegate.swift */,
 				623B79B71A70D2D700654585 /* ViewController.swift */,
 				EC5B24CA1A739DE20025DF03 /* AnnouncementManager.swift */,
@@ -219,9 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6CF4681A8047B5008824B5 /* Main.storyboard in Resources */,
 				623B79C01A70D2D700654585 /* LaunchScreen.xib in Resources */,
 				623B79BD1A70D2D700654585 /* Images.xcassets in Resources */,
-				ECB868551A78C93A0010C2CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +280,10 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		ECB868531A78C93A0010C2CC /* Main.storyboard */ = {
+		EC6CF4661A8047B4008824B5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ECB868541A78C93A0010C2CC /* Base */,
+				EC6CF4671A8047B5008824B5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
