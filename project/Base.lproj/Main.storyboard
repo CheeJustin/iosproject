@@ -43,15 +43,6 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brf-NT-IlW">
-                                        <rect key="frame" x="266" y="7" width="46" height="30"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="show" identifier="ToGroupView" id="T1L-eu-gmy"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohd-EN-wav"/>
@@ -236,6 +227,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="groupName" destination="pUp-Ni-wsd" id="9zz-QK-Juc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -707,7 +701,4 @@
             <point key="canvasLocation" x="-265.5" y="1014"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="T1L-eu-gmy"/>
-    </inferredMetricsTieBreakers>
 </document>

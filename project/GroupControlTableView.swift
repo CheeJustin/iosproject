@@ -54,18 +54,6 @@ class GroupControlTableView: UITableViewController
         return cell;
     }
     
-    /*
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-    {
-        // Create a variable that I want to send
-        var newCurGroup = Group(id: 0, name: "No name", selected: true, info: "No info", announcements: []);
-        
-        let desitantionVC = segue.destinationViewController as ViewController;
-        destinationVC.curGroup = newCurGroup;
-        
-    }
-    */
-    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         groups[indexPath.row].selected = !groups[indexPath.row].selected;

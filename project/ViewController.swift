@@ -11,19 +11,24 @@ import UIKit
 class ViewController: UIViewController
 {
     
-    var courses = groupManager.controls;
+    //var courses = groupManager.controls;
 
+    @IBOutlet weak var groupName: UINavigationItem!
+    
 	override func viewDidLoad()
     {
         super.viewDidLoad();
-		// Do any additional setup after loading the view, typically from a nib.
-        
+		
+        // Renames the page according to what was selected.
+        groupName.title = groupManager.getCurControlGroup().name;
 	}
 
     @IBAction func back(sender: AnyObject)
     {
         // Dismisses current view
         println("CLICKED");
+        
+        groupManager.deselectAllControls();
         dismissViewControllerAnimated(true, completion: nil);
     }
 

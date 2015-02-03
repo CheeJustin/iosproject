@@ -56,6 +56,8 @@ class GroupManager: NSObject
             }
             
             isPopulated = true;
+            
+            // For testing purposes only.
             announcementManager.populate();
             announcementManager2.populate2();
             controls[0].announcements = announcementManager.announcements;
@@ -78,6 +80,15 @@ class GroupManager: NSObject
             }
         }
         return Group(id: 0, name: "No name", selected: true, info: "No info", announcements: []);
+    }
+    
+    // Deselects all control groups
+    func deselectAllControls() -> Void
+    {
+        for i in 0...controls.count - 1
+        {
+            controls[i].selected = false;
+        }
     }
     
 }
