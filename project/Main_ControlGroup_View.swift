@@ -1,14 +1,14 @@
 //
-//  GroupJoinedTableVIew.swift
+//  GroupTableView.swift
 //  project
 //
-//  Created by Justin Chee on 2015-01-26.
+//  Created by Justin Chee on 2015-01-24.
 //  Copyright (c) 2015 ctrlaltbelieve2. All rights reserved.
 //
 
 import UIKit
 
-class GroupViewView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
+class Main_ControlGroup_View: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
     
     let cellID: String = "GroupCell";
@@ -26,17 +26,9 @@ class GroupViewView: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
         // Load the appropriate groups
         groupManager.populate();
-        controlGroups = groupManager.views;
-        
-        //NSNotificationCenter.defaultCenter().addObserver(self, selector: "goToGroupView:", name: "ToGroupView", object: nil);
+        controlGroups = groupManager.controls;
     }
     
-    /*
-    func goToGroupView()
-    {
-        self.performSegueWithIdentifier("ToGroupView", sender: self);
-    }
-    */
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
@@ -62,12 +54,11 @@ class GroupViewView: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return cell;
     }
     
-    /*
+    
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
     {
         return true;
     }
-    */
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
     {
@@ -85,9 +76,19 @@ class GroupViewView: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("CLick");
+        print("clicked");
+        if indexPath.section == 0 {
+            println("www");
+        }
     }
-
-    
+    /*
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        //groupManager.toggleSelect(indexPath.row);
+        println("clicked");
+        //NSNotificationCenter.defaultCenter().postNotificationName("selectGroup", object: nil);
+        println("clicked");
+    }
+    */
     
 }

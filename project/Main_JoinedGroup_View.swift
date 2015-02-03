@@ -1,14 +1,14 @@
 //
-//  GroupTableView.swift
+//  GroupJoinedTableVIew.swift
 //  project
 //
-//  Created by Justin Chee on 2015-01-24.
+//  Created by Justin Chee on 2015-01-26.
 //  Copyright (c) 2015 ctrlaltbelieve2. All rights reserved.
 //
 
 import UIKit
 
-class GroupControlView: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
+class Main_JoinedGroup_View: UIViewController, UITableViewDelegate, UITableViewDataSource //UITableViewController
 {
     
     let cellID: String = "GroupCell";
@@ -26,9 +26,17 @@ class GroupControlView: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         // Load the appropriate groups
         groupManager.populate();
-        controlGroups = groupManager.controls;
+        controlGroups = groupManager.views;
+        
+        //NSNotificationCenter.defaultCenter().addObserver(self, selector: "goToGroupView:", name: "ToGroupView", object: nil);
     }
     
+    /*
+    func goToGroupView()
+    {
+    self.performSegueWithIdentifier("ToGroupView", sender: self);
+    }
+    */
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
@@ -54,38 +62,32 @@ class GroupControlView: UIViewController, UITableViewDelegate, UITableViewDataSo
         return cell;
     }
     
-    
+    /*
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
     {
-        return true;
+    return true;
     }
+    */
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
     {
+        /*
         if editingStyle == .Delete
         {
-            controlGroups.removeAtIndex(indexPath.row);
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade);
+        controlGroups.removeAtIndex(indexPath.row);
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade);
         }
         else if editingStyle == .Insert
         {
-            // Stuff
+        // Stuff
         }
+        */
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.section == 0 {
-            println("www");
-        }
+        println("CLick");
     }
-    /*
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
-        //groupManager.toggleSelect(indexPath.row);
-        println("clicked");
-        //NSNotificationCenter.defaultCenter().postNotificationName("selectGroup", object: nil);
-        println("clicked");
-    }
-    */
+    
+    
     
 }

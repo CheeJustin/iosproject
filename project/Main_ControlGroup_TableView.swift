@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupControlTableView: UITableViewController
+class Main_ControlGroup_TableView: UITableViewController
 {
     var groups: Array<Group> = [];
     let cellID: String = "GroupControlCell";
@@ -40,6 +40,7 @@ class GroupControlTableView: UITableViewController
         cell.textLabel?.text = (group.name as String);
         cell.textLabel?.textColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0);
         
+        /*
         if group.selected
         {
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark;
@@ -48,12 +49,10 @@ class GroupControlTableView: UITableViewController
         {
             cell.accessoryType = UITableViewCellAccessoryType.None;
         }
-        
-        //cell.button.addTarget(self, action: "Test", forControlEvents: .TouchUpInside)
+        */
         
         return cell;
     }
-    
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
@@ -64,15 +63,7 @@ class GroupControlTableView: UITableViewController
         tableView.deselectRowAtIndexPath(indexPath, animated: false);
         tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None);
         
-        //NSNotificationCenter.defaultCenter().postNotificationName("ToGroupView", object: nil);
-        //self.performSegueWithIdentifier("ToGroupView", sender: self);
-    }
-    
-    /*
-    func Test()
-    {
         self.performSegueWithIdentifier("ToGroupView", sender: self);
     }
-    */
 
 }

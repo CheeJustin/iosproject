@@ -9,8 +9,11 @@
 import UIKit
 
 var announcementManager = AnnouncementManager();
+var announcementManager2 = AnnouncementManager();
 
 var announcements_DEFAULT = ["Classes Cancelled", "Quiz next week!", "New office hours", "Marks lost", "Assignment 2 is out!", "IT help", "Disregard the previous announcement", "Sick today", "Nvm, not sick"];
+
+var announcements_DEFAULT2 = ["Announcements 2", "More announcements 2", "Stuff", "BCIT", "Direct", "Student", "Messaging", "Acronym"];
 
 
 struct Announcement
@@ -40,6 +43,19 @@ class AnnouncementManager: NSObject
                 addAnnouncement(announcement);
             }
     
+            isPopulated = true;
+        }
+    }
+    
+    func populate2()
+    {
+        if !isPopulated
+        {
+            for announcement in announcements_DEFAULT2
+            {
+                addAnnouncement(announcement);
+            }
+            
             isPopulated = true;
         }
     }
