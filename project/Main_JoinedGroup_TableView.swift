@@ -40,9 +40,13 @@ class Main_JoinedGroup_TableView: UITableViewController
     {
         
         let cell = tableView.dequeueReusableCellWithIdentifier(cellID) as UITableViewCell;
+        //var cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: cellID);
+        
         let group = groups[indexPath.row];
         cell.textLabel?.text = (group.name as String);
         cell.textLabel?.textColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0);
+        cell.detailTextLabel?.text = "ooo";
+        cell.detailTextLabel?.textColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0);
         
         return cell;
     }

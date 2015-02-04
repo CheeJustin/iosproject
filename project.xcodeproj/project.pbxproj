@@ -24,6 +24,7 @@
 		EC6CF46C1A80B153008824B5 /* Group_Announcement_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF46B1A80B153008824B5 /* Group_Announcement_TableView.swift */; };
 		EC6CF46E1A80BF2C008824B5 /* Announcement_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF46D1A80BF2C008824B5 /* Announcement_View.swift */; };
 		EC6CF4701A80C5CC008824B5 /* Main_JoinedGroup_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF46F1A80C5CC008824B5 /* Main_JoinedGroup_TableView.swift */; };
+		EC81F5301A8185ED00060559 /* Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC81F52F1A8185ED00060559 /* Expand.swift */; };
 		ECB8684E1A77EC9D0010C2CC /* Main_ControlGroup_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8684D1A77EC9D0010C2CC /* Main_ControlGroup_TableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		EC6CF46B1A80B153008824B5 /* Group_Announcement_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group_Announcement_TableView.swift; sourceTree = "<group>"; };
 		EC6CF46D1A80BF2C008824B5 /* Announcement_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement_View.swift; sourceTree = "<group>"; };
 		EC6CF46F1A80C5CC008824B5 /* Main_JoinedGroup_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_JoinedGroup_TableView.swift; sourceTree = "<group>"; };
+		EC81F52F1A8185ED00060559 /* Expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expand.swift; sourceTree = "<group>"; };
 		ECB8684D1A77EC9D0010C2CC /* Main_ControlGroup_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_ControlGroup_TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				EC6CF4661A8047B4008824B5 /* Main.storyboard */,
+				EC81F52F1A8185ED00060559 /* Expand.swift */,
 				623B79B51A70D2D700654585 /* AppDelegate.swift */,
 				EC5B24CA1A739DE20025DF03 /* AnnouncementManager.swift */,
 				EC5B24C41A7397470025DF03 /* GroupManager.swift */,
@@ -253,6 +256,7 @@
 				EC5B24CF1A7706C80025DF03 /* Group_ToRecipient_View.swift in Sources */,
 				EC6CF46A1A80AD91008824B5 /* Main_JoinedGroup_View.swift in Sources */,
 				EC6CF4701A80C5CC008824B5 /* Main_JoinedGroup_TableView.swift in Sources */,
+				EC81F5301A8185ED00060559 /* Expand.swift in Sources */,
 				EC5B24CB1A739DE20025DF03 /* AnnouncementManager.swift in Sources */,
 				623B79B61A70D2D700654585 /* AppDelegate.swift in Sources */,
 				EC5B24C11A735F290025DF03 /* Group_GroupSelection_TableView.swift in Sources */,
