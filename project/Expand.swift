@@ -17,6 +17,8 @@ class Expand: UITableViewController
 
     var curSelectedIndex = -1;
     
+    @IBOutlet weak var txtLabel: UILabel!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad();
@@ -41,9 +43,21 @@ class Expand: UITableViewController
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
+        //let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: cellIdentifier)
         var cell = tableView.dequeueReusableCellWithIdentifier(self.cellIdentifier) as UITableViewCell
         cell.textLabel?.text = ( curSelectedIndex == indexPath.row ) ? "Selected" : "Not Selected";
-        
+        if (curSelectedIndex == indexPath.row)
+        {
+            cell.detailTextLabel?.text = "Test\n2\n3\n4\n5\n6\nTEST END\n";
+            cell.detailTextLabel?.numberOfLines = 7;
+            cell.detailTextLabel?.backgroundColor = UIColor.grayColor();
+            cell.detailTextLabel?.textColor = UIColor.blueColor();
+        }
+        else
+        {
+            cell.detailTextLabel?.text = "";
+            cell.detailTextLabel?.numberOfLines = 0;
+        }
         return cell
     }
     
@@ -51,13 +65,20 @@ class Expand: UITableViewController
     {
         if curSelectedIndex == indexPath.row
         {
-            return 150.0;
+            return 143.0;
         }
         return 50.0;
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        curSelectedIndex = indexPath.row;
+        if curSelectedIndex == indexPath.row
+        {
+            curSelectedIndex = -1;
+        }
+        else
+        {
+            curSelectedIndex = indexPath.row;
+        }
         println(curSelectedIndex);
         self.tableView.reloadData();
     }
