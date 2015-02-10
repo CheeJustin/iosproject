@@ -287,6 +287,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendEmail:" destination="798-Nc-2Ej" eventType="touchUpInside" id="6Sg-ec-wNZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.88133285984848486" green="0.88133285984848486" blue="0.88133285984848486" alpha="1" colorSpace="calibratedRGB"/>
