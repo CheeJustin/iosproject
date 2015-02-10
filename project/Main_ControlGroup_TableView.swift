@@ -20,6 +20,10 @@ class Main_ControlGroup_TableView: UITableViewController
         
         groupManager.populate();
         groups = groupManager.controls;
+        
+        self.tableView.layer.cornerRadius = 3;
+        self.tableView.layer.masksToBounds = true;
+        self.tableView.clipsToBounds = true;
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
@@ -47,6 +51,9 @@ class Main_ControlGroup_TableView: UITableViewController
     {
         groups[indexPath.row].selected = !groups[indexPath.row].selected;
         groupManager.toggleSelect(indexPath.row);
+        
+        curGroup = groupManager.getCurControlGroup();
+        //curGroupIndex = groupManager.getCurControlGroupIndex();
         
         self.performSegueWithIdentifier("ToGroupView", sender: self);
     }

@@ -20,7 +20,7 @@ class Group_View: UIViewController
         super.viewDidLoad();
 		
         // Renames the page according to what was selected.
-        groupName.title = groupManager.getCurControlGroup().name;
+        groupName.title = curGroup.name;
 	}
 
     @IBAction func back(sender: AnyObject)

@@ -22,6 +22,7 @@ class Group_ToRecipient_View: UIViewController
         super.viewDidLoad();
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadCompose:", name: "reload", object: nil);
+        
         curGroupIndex = groupManager.getCurControlGroupIndex();
         curGroupName = groupManager.controls[curGroupIndex].name;
         populateTextView();
