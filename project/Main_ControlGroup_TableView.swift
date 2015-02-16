@@ -55,6 +55,8 @@ class Main_ControlGroup_TableView: UITableViewController
         curGroup = groupManager.getCurControlGroup();
         //curGroupIndex = groupManager.getCurControlGroupIndex();
         
+        println(curGroup.name);
+        
         self.performSegueWithIdentifier("ToGroupView", sender: self);
     }
 

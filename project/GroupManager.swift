@@ -29,7 +29,7 @@ class GroupManager: NSObject
 {
     
     var controls = [Group]();
-    var views = [Group]();
+    var joins = [Group]();
     
     var isPopulated: Bool = false;
     var id = 0;
@@ -41,7 +41,7 @@ class GroupManager: NSObject
     
     func addView(id: Int, name: String, selected: Bool = false, info: String = "I am info")
     {
-        views.append(Group(id: id, name: name, selected: selected, info: info, announcements: []));
+        joins.append(Group(id: id, name: name, selected: selected, info: info, announcements: []));
     }
     
     func populate()
@@ -62,8 +62,12 @@ class GroupManager: NSObject
             // For testing purposes only.
             announcementManager.populate();
             announcementManager2.populate2();
+            announcementManager3.populate3();
             controls[0].announcements = announcementManager.announcements;
             controls[1].announcements = announcementManager2.announcements;
+            
+            joins[0].announcements = announcementManager3.announcements;
+            joins[1].announcements = announcementManager.announcements;
         }
     }
     
@@ -75,6 +79,19 @@ class GroupManager: NSObject
     func getCurControlGroup() -> Group
     {
         for group in controls
+        {
+            if group.selected
+            {
+                return group;
+            }
+        }
+        return Group(id: 0, name: "No name", selected: true, info: "No info", announcements: []);
+    }
+    
+    
+    func getCurJoinedGroup() -> Group
+    {
+        for group in joins
         {
             if group.selected
             {

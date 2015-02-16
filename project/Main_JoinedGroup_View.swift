@@ -26,7 +26,7 @@ class Main_JoinedGroup_View: UIViewController, UITableViewDelegate, UITableViewD
         
         // Load the appropriate groups
         groupManager.populate();
-        controlGroups = groupManager.views;
+        controlGroups = groupManager.joins;
         
         //NSNotificationCenter.defaultCenter().addObserver(self, selector: "goToGroupView:", name: "ToGroupView", object: nil);
     }

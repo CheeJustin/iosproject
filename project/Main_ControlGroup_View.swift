@@ -81,14 +81,5 @@ class Main_ControlGroup_View: UIViewController, UITableViewDelegate, UITableView
             println("www");
         }
     }
-    /*
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
-        //groupManager.toggleSelect(indexPath.row);
-        println("clicked");
-        //NSNotificationCenter.defaultCenter().postNotificationName("selectGroup", object: nil);
-        println("clicked");
-    }
-    */
     
 }

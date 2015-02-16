@@ -10,11 +10,14 @@ import UIKit
 
 var announcementManager = AnnouncementManager();
 var announcementManager2 = AnnouncementManager();
+var announcementManager3 = AnnouncementManager();
 var curAnnouncement = Announcement(title: "No Title", description: "No Description");
 
 var announcements_DEFAULT = ["Classes Cancelled", "Quiz next week!", "New office hours", "Marks lost", "Assignment 2 is out!", "IT help", "Disregard the previous announcement", "Sick today", "Nvm, not sick"];
 
 var announcements_DEFAULT2 = ["Announcements 2", "More announcements 2", "Stuff", "BCIT", "Direct", "Student", "Messaging", "Acronym"];
+
+var announcements_DEFAULT3 = ["Milestone 1", "Milestone 2", "Milestone 3", "PARTAYY", "MOOOOooo", "BDSM", "Messaging", "Acronym"];
 
 
 struct Announcement
@@ -56,6 +59,19 @@ class AnnouncementManager: NSObject
         if !isPopulated
         {
             for announcement in announcements_DEFAULT2
+            {
+                addAnnouncement(announcement);
+            }
+            
+            isPopulated = true;
+        }
+    }
+    
+    func populate3()
+    {
+        if !isPopulated
+        {
+            for announcement in announcements_DEFAULT3
             {
                 addAnnouncement(announcement);
             }

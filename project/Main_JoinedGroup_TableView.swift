@@ -11,7 +11,7 @@ import UIKit
 class Main_JoinedGroup_TableView: UITableViewController
 {
     var groups: Array<Group> = [];
-    let cellID: String = "GroupControlCell";
+    let cellID: String = "GroupJoinedCell";
     
     
     override func viewDidLoad()
@@ -19,7 +19,7 @@ class Main_JoinedGroup_TableView: UITableViewController
         super.viewDidLoad();
         
         groupManager.populate();
-        groups = groupManager.views;
+        groups = groupManager.joins;
         
         self.tableView.layer.cornerRadius = 3;
         self.tableView.layer.masksToBounds = true;
@@ -56,9 +56,12 @@ class Main_JoinedGroup_TableView: UITableViewController
         groups[indexPath.row].selected = !groups[indexPath.row].selected;
         groupManager.toggleSelect(indexPath.row);
         
-        //self.performSegueWithIdentifier("ToGroupView", sender: self);
+        //curGroup = groupManager.getCurJoinedGroup();
+        curGroup = groups[indexPath.row];
+        //println(groups[indexPath.row].name);
+        
+        self.performSegueWithIdentifier("ToGroupView", sender: self);
     }
-    
 
 
 }
