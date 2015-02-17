@@ -63,7 +63,7 @@ class Main_ControlGroup_TableView: UITableViewController
         
         println(curGroup.name);
         
-        //self.performSegueWithIdentifier("ToGroupView", sender: self);
+        self.performSegueWithIdentifier("ToGroupView", sender: self);
     }
 
 }

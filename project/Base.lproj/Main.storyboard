@@ -109,7 +109,7 @@
         <!--Group_View-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" userLabel="Group_View" customClass="Group_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" userLabel="Group_View" customClass="Group_View_API" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -581,7 +581,7 @@
             <objects>
                 <tableViewController id="p1c-BT-KFU" customClass="Expand" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="V7T-yT-4of">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="224"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="560"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -617,10 +617,10 @@
             </objects>
             <point key="canvasLocation" x="-1909" y="1531"/>
         </scene>
-        <!--View Controller-->
+        <!--Group InfoAPI-->
         <scene sceneID="f5S-Mu-8bl">
             <objects>
-                <viewController id="TWL-Px-v4X" sceneMemberID="viewController">
+                <viewController id="TWL-Px-v4X" customClass="Group_Info_API" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2OL-uY-WqF"/>
                         <viewControllerLayoutGuide type="bottom" id="MwF-QS-QCz"/>
@@ -644,6 +644,9 @@
                             <constraint firstItem="ZzC-ms-kV6" firstAttribute="top" secondItem="Cj9-86-HIS" secondAttribute="top" constant="20" symbolic="YES" id="X5X-5b-k95"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="groupInfo" destination="ZzC-ms-kV6" id="gks-ww-xJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zap-pO-yvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -687,7 +690,7 @@
         <!--Main_ControlGroup_TableView-->
         <scene sceneID="bnN-DV-a11">
             <objects>
-                <tableViewController id="xnj-Ur-BD3" userLabel="Main_ControlGroup_TableView" customClass="Main_ControlGroup_TableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="xnj-Ur-BD3" userLabel="Main_ControlGroup_TableView" customClass="Main_ControlGroup_API" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Amn-GI-LXr">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="104"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -752,7 +755,7 @@
         <!--Group_ToRecipient_View-->
         <scene sceneID="M87-Ox-mMH">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="iG9-J4-P1A" userLabel="Group_ToRecipient_View" customClass="Group_ToRecipient_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="iG9-J4-P1A" userLabel="Group_ToRecipient_View" customClass="Group_To_API" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gQW-yQ-13a"/>
                         <viewControllerLayoutGuide type="bottom" id="euV-Rd-HO8"/>
@@ -963,7 +966,7 @@
         <!--Main_JoinedGroup_TableView-->
         <scene sceneID="OQH-2X-7zJ">
             <objects>
-                <tableViewController id="Sqe-am-f7l" userLabel="Main_JoinedGroup_TableView" customClass="Main_JoinedGroup_TableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Sqe-am-f7l" userLabel="Main_JoinedGroup_TableView" customClass="Main_JoinedGroup_API" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rXH-Ro-r6X">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="224"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1001,11 +1004,11 @@
                         <viewControllerLayoutGuide type="bottom" id="HJt-E8-1N1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uHN-up-h6f">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCH-2r-MqY">
-                                <rect key="frame" x="16" y="20" width="288" height="224"/>
+                                <rect key="frame" x="16" y="20" width="568" height="560"/>
                                 <connections>
                                     <segue destination="p1c-BT-KFU" kind="embed" id="Yzs-ja-hoy"/>
                                 </connections>
@@ -1022,12 +1025,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfB-Mp-WFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1212" y="1541"/>
+            <point key="canvasLocation" x="-1716" y="1473"/>
         </scene>
         <!--Main_View-->
         <scene sceneID="Cm1-wC-PgU">
             <objects>
-                <viewController id="q9b-Ct-2Du" userLabel="Main_View" customClass="Group_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="q9b-Ct-2Du" userLabel="Main_View" customClass="Group_View_API" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="leS-nG-xCa"/>
                         <viewControllerLayoutGuide type="bottom" id="l6X-6y-bEZ"/>
@@ -1049,7 +1052,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k00-sP-VG1">
                                 <rect key="frame" x="0.0" y="303" width="320" height="264"/>
                                 <connections>
-                                    <segue destination="Lrz-fb-VDL" kind="embed" id="wZI-UD-cN7"/>
+                                    <segue destination="jU8-av-Mpy" kind="embed" id="hnh-Cy-nYz"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GvF-4I-3da">
@@ -1141,6 +1144,7 @@
                     <connections>
                         <outlet property="btn_email" destination="F05-Oh-FLq" id="cWw-22-cRc"/>
                         <outlet property="groupName" destination="VuS-qQ-Wlx" id="3Hf-Qd-tSh"/>
+                        <outlet property="instructorName" destination="9TR-8R-zJe" id="IDj-Km-4wq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HMP-bX-rFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1156,7 +1160,7 @@
                         <viewControllerLayoutGuide type="bottom" id="oMe-aW-W4q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ycw-zH-QFZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0x-fh-b7Q">
@@ -1166,7 +1170,7 @@
                                 </state>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibY-GJ-ClE">
-                                <rect key="frame" x="16" y="20" width="568" height="560"/>
+                                <rect key="frame" x="16" y="20" width="288" height="224"/>
                                 <connections>
                                     <segue destination="shj-15-Jvy" kind="embed" id="xXT-NL-5li"/>
                                 </connections>
@@ -1203,14 +1207,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aK1-In-16E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-40" y="1103"/>
+            <point key="canvasLocation" x="-40" y="1085"/>
         </scene>
         <!--Group_Announcement_TableView-->
         <scene sceneID="EJu-ZA-FCg">
             <objects>
-                <tableViewController id="shj-15-Jvy" userLabel="Group_Announcement_TableView" customClass="Group_Announcement_TableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="shj-15-Jvy" userLabel="Group_Announcement_TableView" customClass="Group_Announcement_API" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="agp-oX-1tr">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="560"/>
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="224"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>

@@ -1,3 +1,5 @@
+
+/*
 import UIKit
 
 class TipInCellAnimator {
@@ -18,6 +20,20 @@ class TipInCellAnimator {
         // 6
         UIView.animateWithDuration(0.4) {
             view.layer.transform = CATransform3DIdentity
+            view.layer.opacity = 1
+        }
+    }
+}
+*/
+
+import UIKit
+
+class TipInCellAnimator {
+    // placeholder for things to come -- only fades in for now
+    class func animate(cell:UITableViewCell) {
+        let view = cell.contentView
+        view.layer.opacity = 0.1
+        UIView.animateWithDuration(1.4) {
             view.layer.opacity = 1
         }
     }

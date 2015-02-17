@@ -10,6 +10,8 @@
 	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>D889225A19281E5FA72030C24750A25EF85D8BCB</key>
+		<string>https://bitbucket.org/ctrlaltbelieve_ios/studentconnect.git</string>
 		<key>F93D6A38EF1686285C73C3E5B28DCAF198ADBA75</key>
 		<string>https://github.com/liusqi/iosproject.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>project.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>D889225A19281E5FA72030C24750A25EF85D8BCB</key>
+		<string>../../features:ui-admin</string>
 		<key>F93D6A38EF1686285C73C3E5B28DCAF198ADBA75</key>
 		<string>../..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>F93D6A38EF1686285C73C3E5B28DCAF198ADBA75</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D889225A19281E5FA72030C24750A25EF85D8BCB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>features:ui-admin</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

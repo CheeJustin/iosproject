@@ -8,6 +8,10 @@
 
 import Foundation
 
+var curAlbum: Album = Album(name: "", price: "", thumbnailImageURL: "", largeImageURL: "", itemURL: "", artistURL: "", collectionID: -666, artist: "")
+
+var curAlbumSingles: [Album] = []
+
 class Album
 {
     var title: String
@@ -16,9 +20,11 @@ class Album
     var largeImageURL: String
     var itemURL: String
     var artistURL: String
+    var collectionID: Int
+    var artist: String
     var selected: Bool
     
-    init(name: String, price: String, thumbnailImageURL: String, largeImageURL: String, itemURL: String, artistURL: String)
+    init(name: String, price: String, thumbnailImageURL: String, largeImageURL: String, itemURL: String, artistURL: String, collectionID : Int, artist: String )
     {
         self.title = name
         self.price = price
@@ -26,6 +32,8 @@ class Album
         self.largeImageURL = largeImageURL
         self.itemURL = itemURL
         self.artistURL = artistURL
+        self.collectionID = collectionID
+        self.artist = artist
         self.selected = false
     }
     
@@ -68,7 +76,20 @@ class Album
                     itemURL = result["trackViewUrl"] as? String
                 }
                 
-                var newAlbum = Album(name: name!, price: price!, thumbnailImageURL: thumbnailURL, largeImageURL: imageURL, itemURL: itemURL!, artistURL: artistURL)
+                var collectionID = result["trackId"] as? Int
+                if collectionID == nil {
+                    collectionID = result["collectionId"] as? Int
+                }
+                
+                if price == nil {
+                    print("price " + name!)
+                    price = "$0.01"
+                }
+                
+                let artist = result["artistName"] as? String
+                
+                
+                var newAlbum = Album(name: name!, price: price!, thumbnailImageURL: thumbnailURL, largeImageURL: imageURL, itemURL: itemURL!, artistURL: artistURL, collectionID: collectionID!, artist: artist!)
                 albums.append(newAlbum)
             }
         }
