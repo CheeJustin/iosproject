@@ -581,7 +581,7 @@
             <objects>
                 <tableViewController id="p1c-BT-KFU" customClass="Expand" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="V7T-yT-4of">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="560"/>
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="224"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -691,7 +691,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Amn-GI-LXr">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="104"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.88" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupControlCell" id="f8I-Al-Zxb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1001,11 +1001,11 @@
                         <viewControllerLayoutGuide type="bottom" id="HJt-E8-1N1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uHN-up-h6f">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCH-2r-MqY">
-                                <rect key="frame" x="16" y="20" width="568" height="560"/>
+                                <rect key="frame" x="16" y="20" width="288" height="224"/>
                                 <connections>
                                     <segue destination="p1c-BT-KFU" kind="embed" id="Yzs-ja-hoy"/>
                                 </connections>
@@ -1049,7 +1049,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k00-sP-VG1">
                                 <rect key="frame" x="0.0" y="303" width="320" height="264"/>
                                 <connections>
-                                    <segue destination="jU8-av-Mpy" kind="embed" id="ig5-th-OMk"/>
+                                    <segue destination="Lrz-fb-VDL" kind="embed" id="wZI-UD-cN7"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GvF-4I-3da">
@@ -1067,7 +1067,7 @@
                             </label>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpX-dp-ARa">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
@@ -1156,7 +1156,7 @@
                         <viewControllerLayoutGuide type="bottom" id="oMe-aW-W4q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ycw-zH-QFZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="264"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0x-fh-b7Q">
@@ -1166,7 +1166,7 @@
                                 </state>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibY-GJ-ClE">
-                                <rect key="frame" x="16" y="20" width="288" height="224"/>
+                                <rect key="frame" x="16" y="20" width="568" height="560"/>
                                 <connections>
                                     <segue destination="shj-15-Jvy" kind="embed" id="xXT-NL-5li"/>
                                 </connections>
@@ -1210,7 +1210,7 @@
             <objects>
                 <tableViewController id="shj-15-Jvy" userLabel="Group_Announcement_TableView" customClass="Group_Announcement_TableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="agp-oX-1tr">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="224"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="560"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>

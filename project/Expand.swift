@@ -82,6 +82,21 @@ class Expand: UITableViewController
         println(curSelectedIndex);
         self.tableView.reloadData();
     }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        
+        if editingStyle == .Delete
+        {
+            //curSelectedIndex.removeAtIndex(indexPath.row);
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade);
+        }
+        else if editingStyle == .Insert
+        {
+        // Stuff
+        }
+
+    }
 
 
 }

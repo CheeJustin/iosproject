@@ -26,6 +26,7 @@
 		EC6CF4701A80C5CC008824B5 /* Main_JoinedGroup_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF46F1A80C5CC008824B5 /* Main_JoinedGroup_TableView.swift */; };
 		EC81F5301A8185ED00060559 /* Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC81F52F1A8185ED00060559 /* Expand.swift */; };
 		ECB8684E1A77EC9D0010C2CC /* Main_ControlGroup_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8684D1A77EC9D0010C2CC /* Main_ControlGroup_TableView.swift */; };
+		ECC2096E1A929CF100742450 /* TipInCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2096D1A929CF100742450 /* TipInCellAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		EC6CF46F1A80C5CC008824B5 /* Main_JoinedGroup_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_JoinedGroup_TableView.swift; sourceTree = "<group>"; };
 		EC81F52F1A8185ED00060559 /* Expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expand.swift; sourceTree = "<group>"; };
 		ECB8684D1A77EC9D0010C2CC /* Main_ControlGroup_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_ControlGroup_TableView.swift; sourceTree = "<group>"; };
+		ECC2096D1A929CF100742450 /* TipInCellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipInCellAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				EC6CF4661A8047B4008824B5 /* Main.storyboard */,
 				EC81F52F1A8185ED00060559 /* Expand.swift */,
+				ECC2096D1A929CF100742450 /* TipInCellAnimator.swift */,
 				623B79B51A70D2D700654585 /* AppDelegate.swift */,
 				EC5B24CA1A739DE20025DF03 /* AnnouncementManager.swift */,
 				EC5B24C41A7397470025DF03 /* GroupManager.swift */,
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				623B79B81A70D2D700654585 /* Group_View.swift in Sources */,
+				ECC2096E1A929CF100742450 /* TipInCellAnimator.swift in Sources */,
 				EC5B24C31A737D2F0025DF03 /* Group_AnnouncementCompose_View.swift in Sources */,
 				EC5B24CF1A7706C80025DF03 /* Group_ToRecipient_View.swift in Sources */,
 				EC6CF46A1A80AD91008824B5 /* Main_JoinedGroup_View.swift in Sources */,
@@ -389,9 +393,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -399,9 +406,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

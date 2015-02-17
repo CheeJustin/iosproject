@@ -26,6 +26,12 @@ class Main_ControlGroup_TableView: UITableViewController
         self.tableView.clipsToBounds = true;
     }
     
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell,
+        forRowAtIndexPath indexPath: NSIndexPath) {
+            TipInCellAnimator.animate(cell)
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
         return 1;
@@ -57,7 +63,7 @@ class Main_ControlGroup_TableView: UITableViewController
         
         println(curGroup.name);
         
-        self.performSegueWithIdentifier("ToGroupView", sender: self);
+        //self.performSegueWithIdentifier("ToGroupView", sender: self);
     }
 
 }
