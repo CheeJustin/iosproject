@@ -116,6 +116,7 @@ class Group_Announcement_API: UITableViewController, APIControllerProtocol
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
+        curSingle = curAlbumSingles[indexPath.row]
         self.performSegueWithIdentifier("ToAnnouncementView", sender: self);
     }
     

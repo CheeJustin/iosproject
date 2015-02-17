@@ -151,6 +151,7 @@ class Main_ControlGroup_API: UITableViewController, APIControllerProtocol
         var resultsArr: NSArray = results["results"] as NSArray
         dispatch_async(dispatch_get_main_queue(), {
             self.albums = Album.albumsWithJSON(resultsArr)
+            curAlbums = self.albums
             self.tableView.reloadData()
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         })

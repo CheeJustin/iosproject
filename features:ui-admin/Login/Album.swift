@@ -9,7 +9,8 @@
 import Foundation
 
 var curAlbum: Album = Album(name: "", price: "", thumbnailImageURL: "", largeImageURL: "", itemURL: "", artistURL: "", collectionID: -666, artist: "")
-
+var curSingle: Album = Album(name: "", price: "", thumbnailImageURL: "", largeImageURL: "", itemURL: "", artistURL: "", collectionID: -666, artist: "")
+var curAlbums: [Album] = []
 var curAlbumSingles: [Album] = []
 
 class Album

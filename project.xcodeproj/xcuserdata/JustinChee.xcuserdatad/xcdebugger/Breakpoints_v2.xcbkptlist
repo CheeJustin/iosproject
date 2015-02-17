@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "features:ui-admin/Login/Album.swift"
-            timestampString = "445853266.668838"
+            timestampString = "445854982.317656"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "albumsWithJSON(_:)"
             landmarkType = "5">
          </BreakpointContent>

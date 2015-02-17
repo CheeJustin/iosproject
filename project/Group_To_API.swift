@@ -33,12 +33,13 @@ class Group_To_API: UIViewController
     {
         var string = curGroupName;
         
-        for song in curAlbumSingles
+        for album in curAlbums
         {
             // Change group.name != curGroupName for cases with groups having the same name <----
-            if song.selected && song.title != curGroupName
+            if album.selected && album.title != curGroupName
             {
-                string += ", -" + truncateName(song.title);
+                //string += ", -" + truncateName(album.title);
+                string += ", " + album.title;
             }
         }
         textRecipient.text = string;

@@ -454,7 +454,7 @@
         <!--Group_Announcement_TableView-->
         <scene sceneID="Ndl-1k-fU4">
             <objects>
-                <tableViewController id="ctX-LX-X27" userLabel="Group_Announcement_TableView" customClass="Group_Announcement_TableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ctX-LX-X27" userLabel="Group_Announcement_TableView" customClass="Group_Announcement_API" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="UaL-AU-ofL">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="192"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -485,7 +485,7 @@
         <!--Group_GroupSelection_TableView-->
         <scene sceneID="WQm-34-y81">
             <objects>
-                <tableViewController id="Io6-qH-9rh" userLabel="Group_GroupSelection_TableView" customClass="Group_GroupSelection_TableView" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Io6-qH-9rh" userLabel="Group_GroupSelection_TableView" customClass="Group_Selection_API" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GW7-vC-yJi">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -869,7 +869,7 @@
         <!--Announcement_View-->
         <scene sceneID="OTW-RV-fvH">
             <objects>
-                <viewController id="xdp-4N-FhP" userLabel="Announcement_View" customClass="Announcement_View" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xdp-4N-FhP" userLabel="Announcement_View" customClass="Announcement_API" customModule="project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mog-rW-O8P"/>
                         <viewControllerLayoutGuide type="bottom" id="9Pp-c3-Qgh"/>
